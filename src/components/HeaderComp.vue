@@ -3,6 +3,8 @@ import StorageComp from "../components/StorageComp.vue";
 import BestProduct from "../components/BestProduct.vue";
 import CardComp from "../components/CardComp.vue";
 import DiagramaComp from "../components/DiagramaComp.vue";
+// import TableCard from "../components/TableCard.vue";
+import ActiveUser from "../components/ActiveUser.vue";
 export default {
   data: () => ({
     password: "Password",
@@ -109,6 +111,8 @@ export default {
     DiagramaComp,
     StorageComp,
     BestProduct,
+    // TableCard,
+    ActiveUser,
   },
 };
 </script>
@@ -299,7 +303,7 @@ export default {
             >
           </v-col>
         </v-app-bar>
-        <div class="d-flex">
+        <div class="d-flex" style="padding-top: 65px">
           <div style="height: 100%">
             <v-navigation-drawer
               height="100vh"
@@ -340,16 +344,17 @@ export default {
             </v-navigation-drawer>
           </div>
           <div style="width: 100%">
-            <v-row>
-              <v-col cols="6" v-for="item in 2" :key="item.id">
-                <CardComp />
-              </v-col>
-            </v-row>
             <v-row class="mx-auto">
               <v-col cols="3" v-for="item in 4" :key="item.id">
                 <DiagramaComp />
               </v-col>
             </v-row>
+            <v-row>
+              <v-col cols="6" v-for="item in 2" :key="item.id">
+                <CardComp />
+              </v-col>
+            </v-row>
+
             <v-row class="mx-auto">
               <v-col cols="12" v-for="item in 1" :key="item.id">
                 <StorageComp />
@@ -358,6 +363,16 @@ export default {
             <v-row class="mx-auto">
               <v-col cols="12" v-for="item in 1" :key="item.id">
                 <BestProduct />
+              </v-col>
+            </v-row>
+            <!-- <v-row class="mx-auto">
+              <v-col cols="12" v-for="item in 1" :key="item.id">
+                <TableCard />
+              </v-col>
+            </v-row> -->
+            <v-row class="mx-auto">
+              <v-col cols="12" v-for="item in 1" :key="item.id">
+                <ActiveUser />
               </v-col>
             </v-row>
           </div>

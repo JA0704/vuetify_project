@@ -178,7 +178,7 @@ export default {
     <v-card class="card" hover>
       <div class="bg-light card-header">
         <v-row justify="center" align="center">
-          <v-col cols="7">
+          <v-col>
             <v-list style="font-size: 14px" color="#f9fafd" class="mb-3"
               >Running Projects</v-list
             >

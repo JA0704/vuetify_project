@@ -8,10 +8,13 @@ export default {
 </script>
 
 <template>
-  <div class="col4">
+  <div>
     <v-card class="h-md-100 card" hover rounded="true">
       <div class="pb-0 card-header">
-        <h5 class="mb-0 mt-2">
+        <v-list
+          style="font-size: 14px; font-weight: 500; padding-top: 0"
+          class="mb-0"
+        >
           Weekly Sales<span
             ><v-icon
               style="
@@ -24,7 +27,7 @@ export default {
               >mdi-help</v-icon
             >
           </span>
-        </h5>
+        </v-list>
       </div>
       <div class="d-flex justify-content-between align-items-end card-body">
         <div>
